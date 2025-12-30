@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist JavaScript – Curso em Vídeo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+    .playlist-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      max-width: 480px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .playlist-card img {
+      width: 100%;
+      height: auto;
+    }
+    .playlist-card h1 {
+      font-size: 1.5em;
+      margin: 20px;
+      color: #333;
+    }
+    .playlist-card a.button {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 14px 28px;
+      background-color: #c4302b;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .playlist-card a.button:hover {
+      background-color: #a32622;
+    }
+  </style>
+</head>
+<body>
+  <div class="playlist-card">
+    <!-- Miniatura do primeiro vídeo da playlist -->
+    <img src="https://img.youtube.com/vi/9gGuKKH01Ww/0.jpg" alt="Miniatura playlist JS">
+    <h1>Curso de JavaScript – Aula 1</h1>
+    <a class="button"
+       href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlAnJ_jJtV29RFxnPHDuk9o"
+       target="_blank">
+      ▶️ Assistir Playlist no YouTube
+    </a>
+  </div>
+</body>
+</html>

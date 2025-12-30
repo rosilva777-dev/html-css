@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas personalizadas</title>
+    <style>
+        h1 {
+            border: 15px solid black;
+            padding: 10px;
+            border-image-source: url('borda.png.png');
+            border-image-slice: 27;
+            border-image-repeat: repeat;
+
+            //*OBS: Outra forma de configura bordas abaixo:*//
+
+            border-image: url('borda.png.png') 27 repeat;
+
+            //*OBS: Caso o seu navegador não seja compatível, você pode colacar a seguinte varaição de configuração de borda a baixo: *//
+
+            border: 12px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+    
+</body>
+</html>

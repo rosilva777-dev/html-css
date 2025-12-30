@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video src="Meu-Video01.mkv"width="500" controls></video>
+    <video src="Meu-Video01.mp4"width="500" controls></video>
+    <video src="Meu-Video01.ogv"width="500" controls></video>
+    <video src="Meu-Video01.webm"width="500"controls></video>
+
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <p>Sendo assim, este vídeo consome o seu próprio serviço de hospedagem do seu site.</p>
+    <p>Obs: Quanto mais tag (source) tiver de variados formatos do mesmo vídeos maior é a chance de compatibilidade com diferentes navegadores.
+    </p>
+    <video width="560" poster="imagens01/Paisagem Flores do Campo.png" controls autoplay loop>
+         <source src="Meu-Video01.mp4" type="video/mp4">
+         <source src="Meu-Video01.mkv" type="video/mkv">
+         <source src="Meu-Video01.ogv" type="video/ogv">
+         <source src="Meu-Video01.webm" type="video/webm">
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Obs: Para evitar o consumo e gasto de dados de banda do servidor e por consequências gasto com hospedagem do seu site,  é aconselhável que se utilize vídeos do you tube ou vimeo com o canal já existentes do próprio proprietário do site para evitar problemas com direito autorais.  </p>
+    <p>Compreendemos que, ao usarmos os vídeos do you tube ou do vimeo, consumimos os serviçod  das duas plataformas de forma ilimitada sem se preocupar com os custos com consumo de dados do servidores e por consequência gastos com hospedagem do site. </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VULAQ6FbuH4?si=7avCMMaOiW2gOcoR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <h1>Inserindo vídeos do vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/123222594?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="A Lei da Água (Novo Código Florestal)"></iframe>
+
+</body>
+</html>

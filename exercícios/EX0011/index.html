@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px)"srcset="imagens/foto-p.png"type="image/png">
+        <source media="(max-width:1050px)"srcset="imagens/foto-m.png"type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML</p>
+    <audio src="midia/Waves Crashing on Rock Beach.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG-->
+    
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Waves Crashing on Rock Beach.mp3" type="audio/MP3">
+        <source src="midia/Waves Crashing on Rock Beach.ogg" type="audio/ogg">
+        <source src="midia/Waves Crashing on Rock Beach.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Waves Crashing on Rock Beach.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <p>Ods: Há dois parâmentros diferentes para inserir áudio em seu site, atravès do parâmetro ou tag(audio src=) e o parâmentro ou tag (audio source src=)sendo que nesta última tag, você precisa adicionar as três versôes de audio para evitar problemas de incompatilidade em navegadores que correspondem as versôes MP3,OGG,WAV</p>
+    <p>Outra observação importante junto com os parâmentros(audio source src=) sempre tem que colocar as tags (preload="metadat") para que aja um bom funcionamento e carregamento do audio seguido das tags (autoplay controls loop) essa última tag faz com que o audio reproduzir automaticamnete a cada finalização de reprodução.</p>
+
+</body>
+</html>
